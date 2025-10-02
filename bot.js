@@ -48,7 +48,7 @@ bot.on('message', (msg) => {
 
 *Status:* ⏳ Pending
 
-_React with ✅ to mark complete or ❌ to cancel_
+_React with 👍 to mark complete or 👎 to cancel_
     `;
     
     // Delete the original message first
@@ -136,7 +136,7 @@ Send a task in this format:
 *Example:*
 \`Editing | ABC Corp | 2025-10-05 | @john\`
 
-The bot will delete your message and format it nicely. React with ✅ to mark complete or ❌ to cancel.
+The bot will delete your message and format it nicely. React with 👍 to mark complete or 👎 to cancel.
 
 *Note:* Bot needs admin permissions to delete messages and read reactions!
   `;
@@ -157,3 +157,4 @@ app.listen(PORT, () => {
   console.log(`✅ Server is running on port ${PORT}`);
 
 });
+
