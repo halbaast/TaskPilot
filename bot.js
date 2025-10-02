@@ -91,12 +91,12 @@ bot.on('message_reaction', (reaction) => {
   let statusEmoji = '';
   
   // Check reaction type
-  if (newReaction.emoji === '✅') {
+  if (newReaction.emoji === '👍') {
     newStatus = 'completed';
-    statusEmoji = '✅';
-  } else if (newReaction.emoji === '❌') {
+    statusEmoji = '👍';
+  } else if (newReaction.emoji === '👎') {
     newStatus = 'cancelled';
-    statusEmoji = '❌';
+    statusEmoji = '👎';
   }
   
   if (newStatus) {
@@ -155,4 +155,5 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`✅ Server is running on port ${PORT}`);
+
 });
